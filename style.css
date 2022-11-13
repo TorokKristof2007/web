@@ -23,7 +23,4 @@ img:hover {
     opacity: 0.7;
     transform: rotate(30deg);
     transition: all 1s ease-in-out;
-   
-}
-
-    
+   }

@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: silver;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color:aqua ;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: blue;
+        }
+        
+        .active {
+          background-color: greenyellow;
+        }
+        </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TKristof oldala</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a style="color: darkgreen;" href="index.html">HOME</a>|<a href="keplink.html">KÉPLINK</a>|<a href="lista.html">LISTA</a>|<a href="tablazat.html">ÓRAREND</a>|<a href="urlap.html">ŰRLAP</a>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="keplink.html">KÉPLINK</a></li>
+        <li><a href="lista.html">LISTA</a></li>
+        <li><a href="tablazat.html">ÓRAREND</a></li>
+        <li><a href="urlap.html">ŰRLAP</a></li>
+      </ul>
+
     <h1>Török Kristóf</h1>
     <h2>Török Kristóf</h2>
     <h3>Török Kristóf</h3>
@@ -23,6 +59,5 @@
 <b>Itt látható a kollázsképem</b>
 <br>
 <img src="img/befunky_2022-9-3_11-39-54.jpg" alt="Az én kollázsképem látható!" width="300">
-    
 </body>
 </html>
