@@ -24,3 +24,21 @@ img:hover {
     transform: rotate(30deg);
     transition: all 1s ease-in-out;
    }
+footer {
+color: greenyellow;
+}
+footer:link{
+color: blue;
+}
+footer:visited{
+    color: cadetblue;
+}
+footer:hover{
+    color: aquamarine;
+}
+footer:active{
+    color: cornflowerblue;
+}
+footer:link:visited{
+    color: cyan;
+}
