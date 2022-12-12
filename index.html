@@ -11,33 +11,70 @@
                                   <meta name="theme-color" content="#7d7878">
 
     <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: silver;
+        <style>
+        * {
+        box-sizing: border-box;
         }
-        
-        li {
-          float: left;
+
+        .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+        background-color: aqua;
+        color: black;
         }
-        
-        li a {
-          display: block;
-          color:aqua ;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
+
+        .menu a {
+        background-color: greenyellow;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;
         }
+
+        .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+        }
+
+        .right {
+        background-color: darkgray;
+        float: right;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        align-self: center;
         
-        li a:hover:not(.active) {
-          background-color: blue;
+        }
+
+        @media only screen and (max-width: 620px) {
+         /* For mobile phones: */
+        .menu, .main, .right {
+        width: 100%;
+        }
+        }
+
+        footer {
+        position: ;
+        background-color: navy;
+        position: absolute;
+        width: 100%;
+        color: greenyellow;
+        line-height: 40px;
+        text-align: center;
+        bottom:0;
         }
         
         .active {
           background-color: greenyellow;
         }
+        @media only screen and (max-width: 620px) 
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
         </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,34 +82,42 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="keplink.html">KÉPLINK</a></li>
-        <li><a href="lista.html">LISTA</a></li>
-        <li><a href="tablazat.html">ÓRAREND</a></li>
-        <li><a href="urlap.html">ŰRLAP</a></li>
-        <li><a href="evszakok.html">ÉVSZAKOK</a></li>
-      </ul>
+  <div style="background-color:darkgreen;padding:15px;text-align:center;">
+  <h1>Török Kristóf</h1>
+</div>
 
-    <h1>Török Kristóf</h1>
+  <div style="overflow: auto;">
+    <div class="menu">
+      <a class="active" href="index.html">Home</a>
+      <a href="keplink.html">KÉPLINK</a>
+      <a href="lista.html">LISTA</a>
+      <a href="tablazat.html">ÓRAREND</a>
+      <a href="urlap.html">ŰRLAP</a>
+      <a href="evszakok.html">ÉVSZAKOK</a>
+    </div>
+    
+    <div class="main">
+     <h1>Török Kristóf</h1>
     <h2>Török Kristóf</h2>
     <h3>Török Kristóf</h3>
     <h4>Török Kristóf</h4>
     <h5>Török Kristóf</h5>
     <h6>Török Kristóf</h6>
-    <a href="keplink.html" title="Ez a kedvencem"></a>
-    <p>
-    Blallaalalllalblalb
-    <b>blaballbalblalbalbalb</b>
-    <i>blablablabblaallbalb</i>
-</p>
-<b>Itt látható a kollázsképem</b>
-<br>
-<img src="img/befunky_2022-9-3_11-39-54.jpg" alt="Az én kollázsképem látható!" width="300">
-<footer align="center" class="footer">
-  <p>Weboldal készítője: Török Kristóf <br>
-  <a href="mailto:torokk@kkszki.hu">E-mail</a>
-  <a href="www.youtube.com/@krsvids4475">Youtube oldalam</a></p>
-</footer>
+    </div>
+    
+    <div class="right">
+      <b>Itt látható a kollázsképem</b>
+    <br>
+    <img src="img/befunky_2022-9-3_11-39-54.jpg" alt="Az én kollázsképem látható!" width="300">
+    </div>
+
+    <div style="text-align:center;padding:10px;margin-top:7px;">
+      <footer>
+      <p>&copy; Weboldal készítője: Török Kristóf <br>
+      <a href="mailto:torokk@kkszki.hu">E-mail</a>
+      <a href="www.youtube.com/@krsvids4475">Youtube oldalam</a></p>
+      </footer>
+      </div>
+
 </body>
 </html>
