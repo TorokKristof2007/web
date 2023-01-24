@@ -11,70 +11,16 @@
                                   <meta name="theme-color" content="#7d7878">
 
     <style>
-        * {
-        box-sizing: border-box;
-        }
 
-        .menu {
-        float: left;
-        width: 20%;
-        text-align: center;
-        background-color: aqua;
-        color: black;
-        }
-
-        .menu a {
-        background-color: greenyellow;
-        padding: 8px;
-        margin-top: 7px;
-        display: block;
-        width: 100%;
-        color: black;
-        }
-
-        .main {
-        float: left;
-        width: 60%;
-        padding: 0 20px;
-        }
-
-        .right {
-        background-color: darkgray;
-        float: right;
-        width: 20%;
-        padding: 15px;
-        margin-top: 7px;
-        align-self: center;
-        
-        }
-
-        @media only screen and (max-width: 620px) {
-         /* For mobile phones: */
-        .menu, .main, .right {
-        width: 100%;
-        }
-        }
-
-        footer {
-        position: ;
-        background-color: navy;
-        position: absolute;
-        width: 100%;
-        color: greenyellow;
-        line-height: 40px;
-        text-align: center;
-        bottom:0;
-        }
-        
-        .active {
-          background-color: greenyellow;
-        }
-        @media only screen and (max-width: 620px) 
-  /* For mobile phones: */
-  .menu, .main, .right {
+@media only screen and (max-width: 620px) {
+     /* For mobile phones: */
+    .menu, .main, .right {
     width: 100%;
-  }
-        </style>
+    }
+    }
+        
+  </style>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TKristof oldala</title>
@@ -93,7 +39,6 @@
       <a href="tablazat.html">ÓRAREND</a>
       <a href="urlap.html">ŰRLAP</a>
       <a href="evszakok.html">ÉVSZAKOK</a>
-      <a href="htovis.html">HOMOKTÖVIS</a>
     </div>
     
     <div class="main">
@@ -109,6 +54,48 @@
       <b>Itt látható a kollázsképem</b>
     <br>
     <img src="img/befunky_2022-9-3_11-39-54.jpg" alt="Az én kollázsképem látható!" width="300">
+    </div>
+    <br>
+
+    <div class="szamolo">
+      <form action="javascript:fügekutya">
+        <fieldset>
+          <legend>Számológép csak neked csak most :)</legend>
+          <input type="number" name="number" id="number1" placeholder="Number1" required="">
+
+          <input type="number" name="number" id="number2" placeholder="Number2" required="">
+
+          <input type="text" name="sz" id="eredmeny" placeholder="eredmény" readonly="">
+          <br>
+          <br>
+          <input type="submit" value="+" onclick="osszeadas()">
+          <input type="submit" value="-" onclick="kivonas()">
+          <input type="submit" value="x" onclick="szorzas()">
+          <input type="submit" value=":" onclick="osztas()">
+          <input type="reset" name="muv" value="KUKA">
+        </fieldset>
+      </form>
+
+      <script>
+        
+        function osszeadas() {
+                    eredmeny.value = Number(number1.value) + Number(number2.value);
+                }
+
+                function kivonas() {
+                    eredmeny.value = Number(number1.value) - Number(number2.value);
+                }
+
+                function szorzas() {
+                    eredmeny.value = Number(number1.value) * Number(number2.value);
+                }
+
+                function osztas() {
+                    eredmeny.value = Number(number1.value) / Number(number2.value);
+                }
+            
+
+      </script>
     </div>
 
     <div style="text-align:center;padding:10px;margin-top:7px;">

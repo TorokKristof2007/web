@@ -3,7 +3,7 @@ body {
 }
 
 a:link {
-    color: red;
+    color: black;
 }
 
 a:visited {
@@ -21,24 +21,64 @@ a:active {
 
 img:hover {
     opacity: 0.7;
-    transform: rotate(30deg);
     transition: all 1s ease-in-out;
    }
 footer {
-color: greenyellow;
+    background-color: darkblue;
 }
-footer:link{
-color: blue;
-}
-footer:visited{
-    color: cadetblue;
-}
-footer:hover{
-    color: aquamarine;
-}
-footer:active{
-    color: cornflowerblue;
-}
-footer:link:visited{
-    color: cyan;
-}
+* {
+    box-sizing: border-box;
+    }
+
+    .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+    background-color: darkblue;
+    color: black;
+    }
+
+    .menu a {
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+    }
+
+    .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    }
+
+    .right {
+    background-color: darkgray;
+    float: right;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    align-self: center;
+    
+    }
+
+    footer {
+    background-color: navy;
+    position: absolute;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    bottom:0;
+    }
+    
+    .active {
+      background-color: greenyellow;
+    }
+    .div{
+        style="overflow: auto
+        background-color:darkgreen; padding:15px; text-align:center"
+
+    }
+    .szamolo{
+        float: left;
+    }
